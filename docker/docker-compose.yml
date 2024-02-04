@@ -1,0 +1,11 @@
+version: '3'
+services:
+  my-postgres:
+    image: postgres:15.3
+    restart: always
+    ports:
+      - "5999:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USERNAME: postgres
+      POSTGRES_DB: my-base
